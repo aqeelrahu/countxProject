@@ -25,7 +25,7 @@ public class AccountsController {
 	private static Map<Integer, Accounts> productRepo = new HashMap<>();
 
 	@PostMapping(value = "/create")
-	   public ResponseEntity<Accounts> createProduct(@RequestBody Accounts account) {
+	   public ResponseEntity<Accounts> createAccount(@RequestBody Accounts account) {
 		System.out.println(account.getName()+","+account.getAddress());
 		Accounts us =new Accounts(); 
 		userRepositry.save(account);
